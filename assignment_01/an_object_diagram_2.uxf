@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.1.1">
+  <zoom_level>5</zoom_level>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>255</x>
+      <y>40</y>
+      <w>70</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Kenta Yamamoto
+s1510756
+2016-12-12</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>415</x>
+      <y>65</y>
+      <w>75</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>_a TokenList_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>290</x>
+      <y>125</y>
+      <w>105</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>_a Token_
+--
+name=NUM
+num=3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>125</y>
+      <w>105</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>_a Token_
+--
+name=Add</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>75</y>
+      <w>15</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>335</x>
+      <y>75</y>
+      <w>120</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>220.0;10.0;220.0;50.0;10.0;50.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>520</x>
+      <y>125</y>
+      <w>105</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>_a Token_
+--
+name=Num
+num=4</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>75</y>
+      <w>135</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0;250.0;50.0;250.0;100.0</additional_attributes>
+  </element>
+</diagram>
