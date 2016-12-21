@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.1.1">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>7</x>
+      <y>14</y>
+      <w>98</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>Kenta Yamamoto
+s1510756
+2016-12-12</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>84</y>
+      <w>147</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>BlueClass
+--
+-list: ListOfPairOfKey&amp;Value
+--
++put(k:Key, v:Value): Void
++get(k:Key): Value
++delete(k:Key): Void
++isRegistered(k:Key): Boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>238</y>
+      <w>147</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>BlueClassUndo
+--
+-prevKey: Key
+-prevVal: Value
+--
++undo(): Void
++put(k:Key, v:Value): Void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>133</x>
+      <y>175</y>
+      <w>21</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+</diagram>
