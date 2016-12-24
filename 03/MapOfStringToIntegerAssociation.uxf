@@ -4,8 +4,8 @@
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>56</x>
-      <y>77</y>
+      <x>14</x>
+      <y>14</y>
       <w>98</w>
       <h>49</h>
     </coordinates>
@@ -13,5 +13,49 @@
 s1510756
 2016-12-23</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>42</x>
+      <y>105</y>
+      <w>217</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>MapOfStringToInteger
+--
+--
++put(k: String, v: Integer): Void
++get(k: String): Integer
++delete(k: String): Void
++isRegistered(k: String): Boolean
+-findIndex(k: String): Integer
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>357</x>
+      <y>147</y>
+      <w>196</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>ArrayList&lt;PairOfStringAndInteger&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>252</x>
+      <y>154</y>
+      <w>119</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..1
+m2=1
+-list</panel_attributes>
+    <additional_attributes>10.0;20.0;150.0;20.0</additional_attributes>
   </element>
 </diagram>

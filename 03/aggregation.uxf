@@ -4,8 +4,8 @@
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>56</x>
-      <y>77</y>
+      <x>14</x>
+      <y>14</y>
       <w>98</w>
       <h>49</h>
     </coordinates>
@@ -13,5 +13,41 @@
 s1510756
 2016-12-23</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>301</x>
+      <y>119</y>
+      <w>70</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>Person</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>119</y>
+      <w>70</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>University</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>133</x>
+      <y>119</y>
+      <w>182</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-&gt;
+m1=*
+m2=*
+students</panel_attributes>
+    <additional_attributes>10.0;20.0;240.0;20.0</additional_attributes>
   </element>
 </diagram>

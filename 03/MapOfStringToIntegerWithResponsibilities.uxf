@@ -14,4 +14,24 @@ s1510756
 2016-12-23</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>119</x>
+      <y>168</y>
+      <w>217</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>MapOfStringToInteger
+--
+-list: ArrayList&lt;PairOfStringAndInteger&gt;
+--
++put(k: String, v: Integer): Void
+...
+--
+Responsibilities
+-- asociate an integer with a string
+</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>

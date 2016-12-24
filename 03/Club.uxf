@@ -14,4 +14,22 @@ s1510756
 2016-12-23</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>182</x>
+      <y>154</y>
+      <w>147</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>Club
+--
+-myId: Integer {readOnly}
+_-nextId: Integer = 0_
+--
++getMyId(): Integer
++checkNextId(): Integer
+_+getNextId(): Integer_</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>

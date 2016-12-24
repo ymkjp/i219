@@ -4,14 +4,90 @@
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>56</x>
-      <y>77</y>
+      <x>14</x>
+      <y>21</y>
       <w>98</w>
       <h>49</h>
     </coordinates>
     <panel_attributes>Kenta Yamamoto
 s1510756
-2016-12-23</panel_attributes>
+2016-12-23 20:00:00
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>21</x>
+      <y>133</y>
+      <w>217</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>UndoMapOfStringToInteger
+--
+-prevKey: String
+-prevVal: Integer
+--
++put(k: String, v: Integer): Void
++undo(): Void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>322</x>
+      <y>133</y>
+      <w>217</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>MapOfStringToInteger
+--
+-list: List&lt;PairOfStringAndInteger&gt;
+--
++put(k: String, v: Integer): Void
++get(k: String): Integer
++delete(k: String): Void
++isRegistered(k: String): Boolean
+-findIndex(k: String): Integer
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>231</x>
+      <y>196</y>
+      <w>105</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>130.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>77</x>
+      <y>259</y>
+      <w>56</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>21</x>
+      <y>350</y>
+      <w>301</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>1. prevKey is k in the preceding put(k,v), and
+prevVal is the value previously associated with k
+before the preceding put(k,v).
+2. put overrides put in the superclass to let the two
+attributes be those key and value.</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

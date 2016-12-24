@@ -4,7 +4,7 @@
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>56</x>
+      <x>49</x>
       <y>77</y>
       <w>98</w>
       <h>49</h>
@@ -12,6 +12,72 @@
     <panel_attributes>Kenta Yamamoto
 s1510756
 2016-12-23</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>84</x>
+      <y>196</y>
+      <w>112</w>
+      <h>161</h>
+    </coordinates>
+    <panel_attributes>template=K V
+Pair
+--
+-key: K
+-val: V
+--
++getKey(): K
++getVal(): K
++setKey(k: K): Void
++setVal(v: V): Void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>175</x>
+      <y>259</y>
+      <w>231</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;bind&gt;&gt; &lt;K -&gt; String, V -&gt; Integer&gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;310.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>392</x>
+      <y>266</y>
+      <w>147</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>PairOfStringAndInteger</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>259</x>
+      <y>315</y>
+      <w>196</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Pair&lt;K -&gt; String, V -&gt; Integer&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>259</x>
+      <y>343</y>
+      <w>196</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Pair&lt;String, Integer&gt;</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

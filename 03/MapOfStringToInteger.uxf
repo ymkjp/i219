@@ -4,14 +4,34 @@
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>56</x>
-      <y>77</y>
+      <x>140</x>
+      <y>119</y>
       <w>98</w>
       <h>49</h>
     </coordinates>
     <panel_attributes>Kenta Yamamoto
 s1510756
 2016-12-23</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>189</x>
+      <y>175</y>
+      <w>217</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>MapOfStringToInteger
+--
+-list: ArrayList&lt;PairOfStringAndInteger&gt;
+--
++put(k: String, v: Integer): Void
++get(k: String): Integer
++delete(k: String): Void
++isRegistered(k: String): Boolean
+-findIndex(k: String): Integer
+</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

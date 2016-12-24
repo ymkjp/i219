@@ -11,7 +11,47 @@
     </coordinates>
     <panel_attributes>Kenta Yamamoto
 s1510756
-2016-12-23</panel_attributes>
+2016-12-23 20:00:00
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>154</x>
+      <y>413</y>
+      <w>231</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Exception&gt;&gt;
+SyntaxErrorException
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>154</x>
+      <y>210</y>
+      <w>231</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Exception&gt;&gt;
+IOException
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>154</x>
+      <y>308</y>
+      <w>231</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Exception&gt;&gt;
+CalculatorException
+</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

@@ -11,7 +11,54 @@
     </coordinates>
     <panel_attributes>Kenta Yamamoto
 s1510756
-2016-12-23</panel_attributes>
+2016-12-23 20:00:00
+</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>91</x>
+      <y>294</y>
+      <w>147</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>MapOfStringToInteger</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>238</x>
+      <y>315</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>key:String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>413</x>
+      <y>315</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Integer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>301</x>
+      <y>322</y>
+      <w>126</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=*
+m2=0..1</panel_attributes>
+    <additional_attributes>10.0;10.0;160.0;10.0</additional_attributes>
   </element>
 </diagram>

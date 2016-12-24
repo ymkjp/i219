@@ -11,7 +11,22 @@
     </coordinates>
     <panel_attributes>Kenta Yamamoto
 s1510756
-2016-12-23</panel_attributes>
+2016-12-23 20:00:00
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>119</x>
+      <y>196</y>
+      <w>231</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>MapOfStringToInteger
+--
+Responsibilities
+-- associate an integer with a string</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

@@ -4,8 +4,8 @@
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>56</x>
-      <y>77</y>
+      <x>0</x>
+      <y>14</y>
       <w>98</w>
       <h>49</h>
     </coordinates>
@@ -13,5 +13,57 @@
 s1510756
 2016-12-23</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>28</x>
+      <y>105</y>
+      <w>217</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>MapOfStringToInteger
+--
+--
++put(k: String, v: Integer): Void
++get(k: String): Integer
++delete(k: String): Void
++isRegistered(k: String): Boolean
+-findIndex(k: String): Integer
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>385</x>
+      <y>105</y>
+      <w>196</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>PairOfStringAndInteger
+--
+-key: String
+-val: Integer
+--
++getKey(): String
++getVal(): Integer
++setKey(k: String): Void
++getKey(k: Integer): Void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>238</x>
+      <y>154</y>
+      <w>161</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..1
+m2={ordered} 1
+-list</panel_attributes>
+    <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
   </element>
 </diagram>

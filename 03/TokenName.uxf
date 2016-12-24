@@ -11,7 +11,31 @@
     </coordinates>
     <panel_attributes>Kenta Yamamoto
 s1510756
-2016-12-23</panel_attributes>
+2016-12-23 20:00:00
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>84</x>
+      <y>161</y>
+      <w>147</w>
+      <h>161</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+TokenName
+--
+LPAR
+RPAR
+MUL
+QUO
+REM
+PLUS
+MINUS
+NUM
+UNDEF
+</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
