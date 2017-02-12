@@ -30,7 +30,13 @@ public class BSNlTree<K extends Comparable<? super K>, V> implements BSTree<K, V
 
   public V get(K key) {
     int compared = key.compareTo(this.key);
-    return compared == 0?this.val:(compared < 0?this.left.get(key):this.right.get(key));
+    if (compared == 0) {
+      return this.val;
+    } else if (compared < 0) {
+      this.left.get(key)
+    } else {
+      this.right.get(key)
+    };
   }
 
   public String toString() {
