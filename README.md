@@ -1,2 +1,15 @@
 # i219
 Software Design Methodology
+
+simpleCalculator/AddParseTree.java
+simpleCalculator/CalculatorException.java
+simpleCalculator/ExpParseTree.java
+simpleCalculator/NumParseTree.java
+simpleCalculator/QuoParseTree.java
+simpleCalculator/SCCLP.java
+simpleCalculator/SimpleCalculator.java
+simpleCalculator/SourceCode.java
+simpleCalculator/SyntaxErrorException.java
+simpleCalculator/Token.java
+simpleCalculator/TokenList.java
+simpleCalculator/TokenName.java
