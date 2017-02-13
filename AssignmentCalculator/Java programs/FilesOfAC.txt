@@ -1,0 +1,34 @@
+javac SyntaxErrorException.java
+javac InterpreterException.java
+
+javac CommandName.java
+javac Command.java
+
+javac ParseTree.java
+
+javac ExpParseTree.java
+javac NumParseTree.java
+javac VarParseTree.java
+javac AddParseTree.java
+javac SubParseTree.java
+javac MulParseTree.java
+javac UmiParseTree.java
+javac QuoParseTree.java
+javac RemParseTree.java
+
+javac StmParseTree.java
+javac EmptyParseTree.java
+javac SCompParseTree.java
+javac AssignParseTree.java
+
+javac TokenName.java
+javac Token.java
+javac SourceCode.java
+javac TokenList.java
+
+javac Stack.java
+javac VMException.java
+javac VirtualMachine.java
+
+javac AssignCalculator.java
+javac ACCLP.java

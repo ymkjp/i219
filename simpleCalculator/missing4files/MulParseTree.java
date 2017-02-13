@@ -1,3 +1,6 @@
+/*
+ * Copyright (c) 2017-02-11 23:31, Kenta Yamamoto <ymkjp@jaist.ac.jp>, s1510756.
+ */
 import java.util.*;
 
 public class MulParseTree
