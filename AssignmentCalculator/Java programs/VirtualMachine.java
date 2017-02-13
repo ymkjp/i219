@@ -37,6 +37,45 @@ public class VirtualMachine
           stk.push(com.getNum());
           pc++;
           break;
+        case LOAD:
+          // Possibly NPE occurs
+          x = env.get(com.getVar());
+          stk.push(x);
+          pc++;
+          break;
+        case STORE:
+          if (stk.size() < 1) {
+            throw new VMException(stk);
+          }
+          x = stk.top();
+          stk.pop();
+          env.put(com.getVar(), com.getNum());
+          pc++;
+          break;
+        case ADD:
+          if (stk.size() < 2) {
+            throw new VMException(stk);
+          }
+          x2 = stk.top();
+          stk.pop();
+          x1 = stk.top();
+          stk.pop();
+          x = x1 + x2;
+          stk.push(x);
+          pc++;
+          break;
+        case SUB:
+          if (stk.size() < 2) {
+            throw new VMException(stk);
+          }
+          x2 = stk.top();
+          stk.pop();
+          x1 = stk.top();
+          stk.pop();
+          x = x1 - x2;
+          stk.push(x);
+          pc++;
+          break;
         case MUL:
           if (stk.size() < 2) {
             throw new VMException(stk);
@@ -46,6 +85,28 @@ public class VirtualMachine
           x1 = stk.top();
           stk.pop();
           x = x1 * x2;
+          stk.push(x);
+          pc++;
+          break;
+        case MONE:
+          if (stk.size() < 1) {
+            throw new VMException(stk);
+          }
+          x1 = stk.top();
+          stk.pop();
+          x = -x1;
+          stk.push(x);
+          pc++;
+          break;
+        case REM:
+          if (stk.size() < 2) {
+            throw new VMException(stk);
+          }
+          x2 = stk.top();
+          stk.pop();
+          x1 = stk.top();
+          stk.pop();
+          x = x1 % x2;
           stk.push(x);
           pc++;
           break;
