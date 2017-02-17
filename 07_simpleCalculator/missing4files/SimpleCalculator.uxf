@@ -166,39 +166,15 @@ ExpParseTree
     <additional_attributes>10.0;10.0;10.0;70.0;690.0;70.0;690.0;100.0</additional_attributes>
   </element>
   <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>833</x>
-      <y>329</y>
-      <w>112</w>
-      <h>49</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Exception&gt;&gt;
-CalculatorException
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
     <id>Relation</id>
     <coordinates>
-      <x>798</x>
-      <y>252</y>
-      <w>105</w>
-      <h>91</h>
+      <x>539</x>
+      <y>35</y>
+      <w>210</w>
+      <h>21</h>
     </coordinates>
     <panel_attributes>lt=&lt;.</panel_attributes>
-    <additional_attributes>130.0;110.0;130.0;40.0;10.0;40.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>882</x>
-      <y>252</y>
-      <w>98</w>
-      <h>91</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.</panel_attributes>
-    <additional_attributes>10.0;110.0;10.0;40.0;120.0;40.0;120.0;10.0</additional_attributes>
+    <additional_attributes>280.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -565,5 +541,18 @@ bg=blue</panel_attributes>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>180.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>735</x>
+      <y>14</y>
+      <w>112</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Exception&gt;&gt;
+CalculatorException
+</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
