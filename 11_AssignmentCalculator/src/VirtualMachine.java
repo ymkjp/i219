@@ -38,7 +38,9 @@ public class VirtualMachine
           pc++;
           break;
         case LOAD:
-          // Possibly NPE occurs
+          if (!env.containsKey(com.getVar())) {
+            throw new VMException(com.getVar());
+          }
           x = env.get(com.getVar());
           stk.push(x);
           pc++;
@@ -47,9 +49,8 @@ public class VirtualMachine
           if (stk.size() < 1) {
             throw new VMException(stk);
           }
-          x = stk.top();
-          stk.pop();
-          env.put(com.getVar(), com.getNum());
+          x = stk.pop();
+          env.put(com.getVar(), x);
           pc++;
           break;
         case ADD:
@@ -126,11 +127,9 @@ public class VirtualMachine
           pc++;
           break;
         case QUIT:
-          if (stk.size() != 1) {
+          if (stk.size() != 0) {
             throw new VMException(stk,stk.size());
           }
-          x = stk.top();
-          stk.pop();
           return env;
         default:
           throw new IllegalStateException("pc1: " + pc + "cl1: " + comList);

@@ -1,1 +1,1 @@
-src/UmiParseTree.java
+../src/UmiParseTree.java
