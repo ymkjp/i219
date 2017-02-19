@@ -56,7 +56,7 @@ public class AssignCalculator {
             System.err.println("No program loaded!");
         } else {
             try {
-                Map<String,Integer> rslt;`  1
+                Map<String,Integer> rslt;
                 Map<String,Integer> env
                     = new HashMap<String,Integer>();
                 rslt = pt.interpret(env);
@@ -85,8 +85,7 @@ public class AssignCalculator {
                 Map<String,Integer> rslt;
                 int pc = 0;
                 Stack<Integer> stk = new Stack<Integer>();
-                Map<String,Integer> env
-                    = new HashMap<String,Integer>();
+                Map<String,Integer> env = new HashMap<String,Integer>();
                 vm.reset(pc,stk,env);
                 rslt = vm.run();
                 System.out.println(rslt);

@@ -18,9 +18,12 @@ public class SimpleCalculator {
     TokenList tl = sc.scan();
     try {
       ept = tl.parse();
-      vm = null; System.out.println("Successfully loaded.");
-    } catch (SyntaxErrorException e) { ept = null;
-      vm = null; System.err.println(e.getMessage());
+      vm = null;
+      System.out.println("Successfully loaded.");
+    } catch (SyntaxErrorException e) {
+      ept = null;
+      vm = null;
+      System.err.println(e.getMessage());
     }
   }
 
