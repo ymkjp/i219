@@ -24,7 +24,6 @@ public class VirtualMachine
     return comList;
   }
 
-  //  int
   public Map<String,Integer> run() throws VMException {
     while (true) {
       if (pc < 0 || pc >= comList.size()) {

@@ -88,20 +88,6 @@ is made from sc</panel_attributes>
     <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
   </element>
   <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>651</x>
-      <y>14</y>
-      <w>70</w>
-      <h>98</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;
-/ invalid
-coin msg is
-displayed</panel_attributes>
-    <additional_attributes>70.0;120.0;70.0;20.0;20.0;20.0;20.0;120.0</additional_attributes>
-  </element>
-  <element>
     <id>UMLState</id>
     <coordinates>
       <x>994</x>
@@ -212,11 +198,10 @@ compile</panel_attributes>
     <coordinates>
       <x>749</x>
       <y>252</y>
-      <w>119</w>
+      <w>91</w>
       <h>77</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-[cashBox &gt;= 80 Yen]
 / No pt err msg
 is displayed</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
@@ -487,8 +472,8 @@ is displayed</panel_attributes>
       <h>35</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-[vm is available]
-/ vm is executed</panel_attributes>
+/ runtime error
+is displayed</panel_attributes>
     <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>

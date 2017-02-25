@@ -19,9 +19,9 @@ s1510756
     <id>UMLState</id>
     <coordinates>
       <x>231</x>
-      <y>98</y>
-      <w>595</w>
-      <h>161</h>
+      <y>77</y>
+      <w>749</w>
+      <h>210</h>
     </coordinates>
     <panel_attributes>Prompt</panel_attributes>
     <additional_attributes/>
@@ -29,21 +29,21 @@ s1510756
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>819</x>
-      <y>105</y>
-      <w>189</w>
-      <h>35</h>
+      <x>637</x>
+      <y>28</y>
+      <w>126</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 in(exp: String)
 / sc becomes available</panel_attributes>
-    <additional_attributes>250.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
   </element>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>994</x>
-      <y>105</y>
+      <x>609</x>
+      <y>7</y>
       <w>70</w>
       <h>28</h>
     </coordinates>
@@ -53,8 +53,8 @@ in(exp: String)
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>994</x>
-      <y>161</y>
+      <x>756</x>
+      <y>7</y>
       <w>70</w>
       <h>28</h>
     </coordinates>
@@ -64,48 +64,34 @@ in(exp: String)
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>819</x>
-      <y>161</y>
-      <w>189</w>
-      <h>35</h>
+      <x>784</x>
+      <y>28</y>
+      <w>154</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 [successfully parsed from tl]
 / pt becomes available</panel_attributes>
-    <additional_attributes>250.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1022</x>
-      <y>126</y>
+      <x>672</x>
+      <y>7</y>
       <w>98</w>
-      <h>49</h>
+      <h>35</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 / a token list tl
 is made from sc</panel_attributes>
-    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>651</x>
-      <y>14</y>
-      <w>70</w>
-      <h>98</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;
-/ invalid
-coin msg is
-displayed</panel_attributes>
-    <additional_attributes>70.0;120.0;70.0;20.0;20.0;20.0;20.0;120.0</additional_attributes>
+    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>994</x>
-      <y>224</y>
+      <x>903</x>
+      <y>7</y>
       <w>70</w>
       <h>28</h>
     </coordinates>
@@ -115,33 +101,33 @@ displayed</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>819</x>
-      <y>224</y>
-      <w>189</w>
-      <h>35</h>
+      <x>931</x>
+      <y>28</y>
+      <w>98</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 /syntax err msg
 is displayed</panel_attributes>
-    <additional_attributes>250.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1022</x>
-      <y>182</y>
-      <w>161</w>
-      <h>56</h>
+      <x>791</x>
+      <y>7</y>
+      <w>154</w>
+      <h>35</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 [syntax error occurs]
 / pt &amp; vm become unavailable</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+    <additional_attributes>50.0;20.0;160.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>574</x>
+      <x>679</x>
       <y>399</y>
       <w>70</w>
       <h>28</h>
@@ -152,8 +138,8 @@ is displayed</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>574</x>
-      <y>315</y>
+      <x>679</x>
+      <y>329</y>
       <w>70</w>
       <h>28</h>
     </coordinates>
@@ -163,44 +149,44 @@ is displayed</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>602</x>
-      <y>336</y>
+      <x>707</x>
+      <y>350</y>
       <w>91</w>
-      <h>77</h>
+      <h>63</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 [pt is available]</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>602</x>
-      <y>252</y>
+      <x>707</x>
+      <y>280</y>
       <w>56</w>
-      <h>77</h>
+      <h>63</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 compile</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>637</x>
-      <y>315</y>
-      <w>98</w>
+      <x>742</x>
+      <y>329</y>
+      <w>168</w>
       <h>28</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 [pt is unavailable]</panel_attributes>
-    <additional_attributes>10.0;20.0;120.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>721</x>
-      <y>315</y>
+      <x>896</x>
+      <y>329</y>
       <w>70</w>
       <h>28</h>
     </coordinates>
@@ -210,21 +196,20 @@ compile</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>749</x>
-      <y>252</y>
-      <w>119</w>
-      <h>77</h>
+      <x>924</x>
+      <y>280</y>
+      <w>91</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-[cashBox &gt;= 80 Yen]
 / No pt err msg
 is displayed</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
   </element>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>441</x>
+      <x>483</x>
       <y>399</y>
       <w>70</w>
       <h>28</h>
@@ -235,87 +220,87 @@ is displayed</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>490</x>
+      <x>546</x>
       <y>399</y>
-      <w>112</w>
+      <w>147</w>
       <h>35</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 / a command list cl
 is generated from pt</panel_attributes>
-    <additional_attributes>120.0;20.0;30.0;20.0</additional_attributes>
+    <additional_attributes>190.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>469</x>
-      <y>252</y>
+      <x>511</x>
+      <y>280</y>
       <w>105</w>
-      <h>161</h>
+      <h>133</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 / vm is made of cl</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;210.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;170.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>574</x>
+      <x>511</x>
       <y>14</y>
       <w>84</w>
-      <h>98</h>
+      <h>77</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 show sc
 [sc is available]
 / sc is displayed</panel_attributes>
-    <additional_attributes>80.0;120.0;80.0;20.0;30.0;20.0;30.0;120.0</additional_attributes>
+    <additional_attributes>80.0;90.0;80.0;20.0;30.0;20.0;30.0;90.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>434</x>
+      <x>371</x>
       <y>14</y>
       <w>84</w>
-      <h>98</h>
+      <h>77</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 show cl
 [vm is available]
 / sc in vm is
 displayed</panel_attributes>
-    <additional_attributes>80.0;120.0;80.0;20.0;30.0;20.0;30.0;120.0</additional_attributes>
+    <additional_attributes>80.0;90.0;80.0;20.0;30.0;20.0;30.0;90.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>504</x>
+      <x>441</x>
       <y>14</y>
       <w>84</w>
-      <h>98</h>
+      <h>77</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 show pt
 [pt is available]
 / pt is displayed</panel_attributes>
-    <additional_attributes>80.0;120.0;80.0;20.0;30.0;20.0;30.0;120.0</additional_attributes>
+    <additional_attributes>80.0;90.0;80.0;20.0;30.0;20.0;30.0;90.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>413</x>
+      <x>287</x>
       <y>28</y>
       <w>35</w>
-      <h>84</h>
+      <h>63</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 quit</panel_attributes>
-    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>406</x>
+      <x>280</x>
       <y>7</y>
       <w>28</w>
       <h>28</h>
@@ -326,18 +311,18 @@ quit</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>371</x>
+      <x>245</x>
       <y>28</y>
       <w>21</w>
-      <h>84</h>
+      <h>63</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>364</x>
+      <x>238</x>
       <y>7</y>
       <w>28</w>
       <h>28</h>
@@ -349,7 +334,7 @@ quit</panel_attributes>
     <id>UMLState</id>
     <coordinates>
       <x>231</x>
-      <y>322</y>
+      <y>329</y>
       <w>70</w>
       <h>28</h>
     </coordinates>
@@ -370,8 +355,8 @@ quit</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>350</x>
-      <y>322</y>
+      <x>399</x>
+      <y>329</y>
       <w>70</w>
       <h>28</h>
     </coordinates>
@@ -403,9 +388,9 @@ quit</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>231</x>
-      <y>35</y>
-      <w>112</w>
+      <x>7</x>
+      <y>56</y>
+      <w>119</w>
       <h>56</h>
     </coordinates>
     <panel_attributes>sc: source code
@@ -419,51 +404,51 @@ bg=blue</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>259</x>
-      <y>252</y>
+      <y>280</y>
       <w>35</w>
-      <h>84</h>
+      <h>63</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 run</panel_attributes>
-    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>280</x>
-      <y>322</y>
-      <w>98</w>
+      <x>294</x>
+      <y>329</y>
+      <w>119</w>
       <h>28</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 [vm is unavailable]</panel_attributes>
-    <additional_attributes>100.0;20.0;30.0;20.0</additional_attributes>
+    <additional_attributes>150.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>378</x>
-      <y>252</y>
+      <x>427</x>
+      <y>280</y>
       <w>98</w>
-      <h>84</h>
+      <h>63</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 / no vm err msg
 is displayed</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>259</x>
-      <y>343</y>
+      <y>350</y>
       <w>98</w>
-      <h>77</h>
+      <h>70</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 [vm is available]
 / vm is executed</panel_attributes>
-    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -487,21 +472,21 @@ is displayed</panel_attributes>
       <h>35</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-[vm is available]
-/ vm is executed</panel_attributes>
+/ runtime error
+is executed</panel_attributes>
     <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>35</x>
+      <x>21</x>
       <y>133</y>
-      <w>63</w>
+      <w>77</w>
       <h>287</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 [no rt error]</panel_attributes>
-    <additional_attributes>70.0;20.0;10.0;20.0;10.0;390.0</additional_attributes>
+    <additional_attributes>90.0;20.0;10.0;20.0;10.0;390.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -514,5 +499,173 @@ is displayed</panel_attributes>
     <panel_attributes>lt=&lt;-
 / result is displayed</panel_attributes>
     <additional_attributes>130.0;20.0;20.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>308</x>
+      <y>14</y>
+      <w>70</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+help
+/ show usage</panel_attributes>
+    <additional_attributes>70.0;90.0;70.0;20.0;20.0;20.0;20.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1071</x>
+      <y>126</y>
+      <w>210</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>PreInterpret</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1183</x>
+      <y>77</y>
+      <w>98</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>No-sc-cmpl</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1225</x>
+      <y>140</y>
+      <w>91</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+[sc is available]</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1071</x>
+      <y>175</y>
+      <w>210</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>ExecuteInterpret</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1183</x>
+      <y>259</y>
+      <w>98</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>InterpretError</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1225</x>
+      <y>189</y>
+      <w>91</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+[interpret error
+occured]
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>973</x>
+      <y>252</y>
+      <w>224</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+/ interpret error
+is displayed</panel_attributes>
+    <additional_attributes>10.0;20.0;300.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>973</x>
+      <y>119</y>
+      <w>112</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+interpret</panel_attributes>
+    <additional_attributes>10.0;20.0;140.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>973</x>
+      <y>77</y>
+      <w>224</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+/ No sc err msg
+is displayed</panel_attributes>
+    <additional_attributes>10.0;20.0;300.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1225</x>
+      <y>91</y>
+      <w>105</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+[sc is unavailable]</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>973</x>
+      <y>217</y>
+      <w>112</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+/ result is displayed</panel_attributes>
+    <additional_attributes>140.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1071</x>
+      <y>224</y>
+      <w>98</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>SuccessInterpret</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1113</x>
+      <y>189</y>
+      <w>105</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+[no interpret error]</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
   </element>
 </diagram>
