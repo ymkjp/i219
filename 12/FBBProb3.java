@@ -1,12 +1,12 @@
 /*
- * Copyright (c) 3/6/17 11:51 PM, Kenta Yamamoto <ymkjp@jaist.ac.jp>, s1510756.
+ * Copyright (c) 3/7/17 11:17 PM, Kenta Yamamoto <ymkjp@jaist.ac.jp>, s1510756.
  */
 
 import java.util.*;
 
-public class FBBProb1 {
+public class FBBProb3 {
   public static void main(String[] args) throws InterruptedException {
-    NonatomicBBuf<Integer> buf = new NonatomicBBuf<Integer>(3);
+    FAtomicBBuf<Integer> buf = new FAtomicBBuf<Integer>(3);
     List<Integer> msgsSent = new ArrayList<Integer>();
 
     for (int i=0; i < 10000; i++) {
@@ -17,8 +17,8 @@ public class FBBProb1 {
 
     int nom = msgsSent.size();
 
-    FSender1<Integer> sender = new FSender1<Integer>(buf,msgsSent);
-    FReceiver1<Integer> receiver = new FReceiver1<Integer>(buf,msgsReceived,nom);
+    FSender3<Integer> sender = new FSender3<Integer>(buf,msgsSent);
+    FReceiver3<Integer> receiver = new FReceiver3<Integer>(buf,msgsReceived,nom);
     sender.start();
     receiver.start();
 
