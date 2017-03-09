@@ -18,11 +18,10 @@ public class Philosopher extends Thread {
     this.left = l;
     this.right = r;
     this.howManyDinners = n;
-    this.waiter = w;
-
-    this.resources = new ArrayList<Chopstick>();
-    this.resources.add(right);
-    this.resources.add(left);
+//    this.waiter = w;
+//    this.resources = new ArrayList<Chopstick>();
+//    this.resources.add(right);
+//    this.resources.add(left);
   }
 
   public void run() {
@@ -34,41 +33,32 @@ public class Philosopher extends Thread {
       }
     }
   }
-
-  public void eat() throws InterruptedException {
-    // thinking
-    waiter.acquire(resources.size());
-    left.acquire();
-    right.acquire();
-    // taking a dinner
-    right.release();
-    left.release();
-    waiter.release(resources.size());
-  }
-
-//  public void run() {
-//    for (int i = 0; i < howManyDinners; i++) {
-//      try {
-//        eat();
-//      } catch (InterruptedException e) {
-//        System.err.println(e);
-//      }
-//    }
-//  }
 //
 //  public void eat() throws InterruptedException {
 //    // thinking
-//    if (left.pickUp()) {
-//      if (right.pickUp()) {
-//        // taking a dinner
-//        right.putDown();
-//        left.putDown();
-//      } else {
-//        left.putDown();
-//        eat();
-//      }
-//    } else {
-//      eat();
-//    }
+//    waiter.acquire(resources.size());
+//    left.acquire();
+//    right.acquire();
+//    // taking a dinner
+//    right.release();
+//    left.release();
+//    waiter.release(resources.size());
 //  }
+
+  public void eat() throws InterruptedException {
+    // For JPF, Better to use infinite loop but not recursive call
+    while (true) {
+      // thinking
+      if (left.pickUp()) {
+        if (right.pickUp()) {
+          // taking a dinner
+          right.putDown();
+          left.putDown();
+          return;
+        } else {
+          left.putDown();
+        }
+      }
+    }
+  }
 }
