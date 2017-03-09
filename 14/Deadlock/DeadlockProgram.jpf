@@ -1,0 +1,3 @@
+target = DeadlockProgram
+classpath+=.
+sourcepath+=. report.console.property_violation=error,trace,snapshot
