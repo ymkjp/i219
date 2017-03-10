@@ -32,6 +32,7 @@ public class VirtualMachine
   //  Add jump commands
   public Map<String,Integer> run() throws VMException {
     while (true) {
+      System.out.println("pc:" + pc);
       if (pc < 0 || pc >= comList.size()) {
         throw new VMException(pc,comList.size());
       }
@@ -131,8 +132,89 @@ public class VirtualMachine
           stk.push(x);
           pc++;
           break;
+        case EQ:
+          if (stk.size() < 2) {
+            throw new VMException(stk);
+          }
+          x2 = stk.pop();
+          x1 = stk.pop();
+          x = x1 == x2 ? 1 : 0;
+          stk.push(x);
+          pc++;
+          break;
+        case NEQ:
+          if (stk.size() < 2) {
+            throw new VMException(stk);
+          }
+          x2 = stk.pop();
+          x1 = stk.pop();
+          x = x1 != x2 ? 1 : 0;
+          stk.push(x);
+          pc++;
+          break;
+        case LT:
+          if (stk.size() < 2) {
+            throw new VMException(stk);
+          }
+          x2 = stk.pop();
+          x1 = stk.pop();
+          x = x1 < x2 ? 1 : 0;
+          stk.push(x);
+          pc++;
+          break;
+        case GT:
+          if (stk.size() < 2) {
+            throw new VMException(stk);
+          }
+          x2 = stk.pop();
+          x1 = stk.pop();
+          x = x1 > x2 ? 1 : 0;
+          stk.push(x);
+          pc++;
+          break;
+        case AND:
+          if (stk.size() < 2) {
+            throw new VMException(stk);
+          }
+          x2 = stk.pop();
+          x1 = stk.pop();
+          x = x1 == 0 ? 0 : (x2 == 0 ? 0 : 1);
+          stk.push(x);
+          pc++;
+          break;
+        case OR:
+          if (stk.size() < 2) {
+            throw new VMException(stk);
+          }
+          x2 = stk.pop();
+          x1 = stk.pop();
+          x = x1 == 0 ? (x2 == 0 ? 0 : 1) : 1;
+          stk.push(x);
+          pc++;
+          break;
+        case JMP:
+          if (stk.size() < 1) {
+            throw new VMException(stk);
+          }
+          pc = pc + stk.pop() + 1;
+          System.out.println("[JMP] pc:" + pc);
+          break;
+        case CJMP:
+          if (stk.size() < 2) {
+            throw new VMException(stk);
+          }
+          x2 = stk.pop();
+          x1 = stk.pop();
+          if (x1 == 1) {
+            pc = pc + x2 + 1;
+          } else {
+            pc++;
+          }
+          System.out.println("[CJMP] pc:" + pc);
+          break;
         case QUIT:
           if (stk.size() != 0) {
+            System.out.println("====waaaaa===");
             throw new VMException(stk,stk.size());
           }
           return env;

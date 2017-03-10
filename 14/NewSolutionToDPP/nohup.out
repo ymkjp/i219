@@ -5,3 +5,18 @@ JavaPathfinder core system v8.0 (rev ${version}) - (C) 2005-2014 United States G
 Test5DPP.main()
 
 ====================================================== search started: 3/10/17 11:58 PM
+
+====================================================== results
+no errors detected
+
+====================================================== statistics
+elapsed time:       01:13:06
+states:             new=10325706,visited=42403270,backtracked=52728976,end=126
+search:             maxDepth=237098,constraints=0
+choice generators:  thread=10325706 (signal=0,lock=3196076,sharedRef=6146862,threadApi=5,reschedule=982763), data=0
+heap:               new=1289446,released=54143758,maxLive=689,gcCycles=38121246
+instructions:       275497610
+max memory:         1920MB
+loaded code:        classes=75,methods=1625
+
+====================================================== search finished: 3/11/17 1:11 AM
