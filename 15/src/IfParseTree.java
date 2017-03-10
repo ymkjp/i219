@@ -4,6 +4,7 @@
 import java.util.*;
 
 public class IfParseTree
+  extends StmParseTree
 {
   private ExpParseTree ept;
   private StmParseTree stm1;
@@ -15,7 +16,7 @@ public class IfParseTree
     stm2 = s2;
   }
 
-  public int interpret(Map<String,Integer> env)
+  public Map<String,Integer> interpret(Map<String,Integer> env)
     throws InterpreterException
   {
     int n1 = ept.interpret(env);
@@ -31,16 +32,16 @@ public class IfParseTree
     int size2, size3;
     Command cmd1, cmd2, cmd3;
 
-    cl1 = ept1.compile();
+    cl1 = ept.compile();
     cl2 = stm1.compile();
     cl3 = stm2.compile();
 
     size2 = cl2.size();
     size3 = cl3.size();
 
-    cmd1 = new Command(CJMP, 2);
-    cmd2 = new Command(JMP, size2 + 2);
-    cmd3 = new Command(JMP, size3 + 1);
+    cmd1 = new Command(CommandName.CJMP, 2);
+    cmd2 = new Command(CommandName.JMP, size2 + 2);
+    cmd3 = new Command(CommandName.JMP, size3 + 1);
 
     cl1.add(cmd1);
     cl1.add(cmd2);

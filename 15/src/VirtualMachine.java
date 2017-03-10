@@ -14,6 +14,11 @@ public class VirtualMachine
     comList = cl;
   }
 
+  public VirtualMachine(List<Command> cl, Integer pc, Stack<Integer> stk, Map<String,Integer> env) {
+    comList = cl;
+    reset(pc, stk, env);
+  }
+
   public void reset(Integer pc, Stack<Integer> stk, Map<String,Integer> env) {
     this.pc = pc;
     this.stk = stk;
