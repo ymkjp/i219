@@ -32,7 +32,7 @@ public class VirtualMachine
   //  Add jump commands
   public Map<String,Integer> run() throws VMException {
     while (true) {
-      System.out.println("pc:" + pc);
+      debug("pc:" + pc);
       if (pc < 0 || pc >= comList.size()) {
         throw new VMException(pc,comList.size());
       }
@@ -40,10 +40,12 @@ public class VirtualMachine
       Command com = comList.get(pc);
       switch (com.getName()) {
         case PUSH:
+          debug("====PUSH===");
           stk.push(com.getNum());
           pc++;
           break;
         case LOAD:
+          debug("====LOAD===");
           if (!env.containsKey(com.getVar())) {
             throw new VMException(com.getVar());
           }
@@ -52,6 +54,7 @@ public class VirtualMachine
           pc++;
           break;
         case STORE:
+          debug("====STORE===");
           if (stk.size() < 1) {
             throw new VMException(stk);
           }
@@ -60,6 +63,7 @@ public class VirtualMachine
           pc++;
           break;
         case ADD:
+          debug("====ADD===");
           if (stk.size() < 2) {
             throw new VMException(stk);
           }
@@ -72,6 +76,7 @@ public class VirtualMachine
           pc++;
           break;
         case SUB:
+          debug("====SUB===");
           if (stk.size() < 2) {
             throw new VMException(stk);
           }
@@ -84,6 +89,7 @@ public class VirtualMachine
           pc++;
           break;
         case MUL:
+          debug("====MUL===");
           if (stk.size() < 2) {
             throw new VMException(stk);
           }
@@ -96,6 +102,7 @@ public class VirtualMachine
           pc++;
           break;
         case MONE:
+          debug("====MONE===");
           if (stk.size() < 1) {
             throw new VMException(stk);
           }
@@ -106,6 +113,7 @@ public class VirtualMachine
           pc++;
           break;
         case REM:
+          debug("====REM===");
           if (stk.size() < 2) {
             throw new VMException(stk);
           }
@@ -118,6 +126,7 @@ public class VirtualMachine
           pc++;
           break;
         case QUO:
+          debug("====QUO===");
           if (stk.size() < 2) {
             throw new VMException(stk);
           }
@@ -133,6 +142,7 @@ public class VirtualMachine
           pc++;
           break;
         case EQ:
+          debug("====EQ===");
           if (stk.size() < 2) {
             throw new VMException(stk);
           }
@@ -143,6 +153,7 @@ public class VirtualMachine
           pc++;
           break;
         case NEQ:
+          debug("====NEQ===");
           if (stk.size() < 2) {
             throw new VMException(stk);
           }
@@ -153,6 +164,7 @@ public class VirtualMachine
           pc++;
           break;
         case LT:
+          debug("====LT===");
           if (stk.size() < 2) {
             throw new VMException(stk);
           }
@@ -163,6 +175,7 @@ public class VirtualMachine
           pc++;
           break;
         case GT:
+          debug("====GT===");
           if (stk.size() < 2) {
             throw new VMException(stk);
           }
@@ -173,6 +186,7 @@ public class VirtualMachine
           pc++;
           break;
         case AND:
+          debug("====AND===");
           if (stk.size() < 2) {
             throw new VMException(stk);
           }
@@ -183,6 +197,7 @@ public class VirtualMachine
           pc++;
           break;
         case OR:
+          debug("====OR===");
           if (stk.size() < 2) {
             throw new VMException(stk);
           }
@@ -193,28 +208,27 @@ public class VirtualMachine
           pc++;
           break;
         case JMP:
+          debug("====JMP===");
+          pc = pc + com.getNum();
+          break;
+        case CJMP:
+          debug("====CJMP===");
+          debug("stk.size():" + stk.size());
+          debug("stk.top():" + stk.top());
+          debug("com.getVar():" + com.getVar() + ", com.getNum():" + com.getNum());
           if (stk.size() < 1) {
             throw new VMException(stk);
           }
-          pc = pc + stk.pop() + 1;
-          System.out.println("[JMP] pc:" + pc);
-          break;
-        case CJMP:
-          if (stk.size() < 2) {
-            throw new VMException(stk);
-          }
-          x2 = stk.pop();
           x1 = stk.pop();
           if (x1 == 1) {
-            pc = pc + x2 + 1;
+            pc = pc + com.getNum();
           } else {
             pc++;
           }
-          System.out.println("[CJMP] pc:" + pc);
           break;
         case QUIT:
+          debug("====QUIT===");
           if (stk.size() != 0) {
-            System.out.println("====waaaaa===");
             throw new VMException(stk,stk.size());
           }
           return env;
@@ -222,6 +236,11 @@ public class VirtualMachine
           throw new IllegalStateException("pc1: " + pc + "cl1: " + comList);
       }
     }
+  }
+
+  public void debug(String msg) {
+    return;
+//    System.out.println(msg);
   }
 
   public String toString() {
