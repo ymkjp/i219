@@ -32,15 +32,16 @@ public class VirtualMachine
   //  Add jump commands
   public Map<String,Integer> run() throws VMException {
     while (true) {
+//      try {Thread.sleep(1000); } catch (InterruptedException e) {};
       debug("pc:" + pc);
       if (pc < 0 || pc >= comList.size()) {
         throw new VMException(pc,comList.size());
       }
-      Integer x, x1, x2;
+      int x, x1, x2;
       Command com = comList.get(pc);
       switch (com.getName()) {
         case PUSH:
-          debug("====PUSH===");
+          debug("====PUSH===" + com.getNum());
           stk.push(com.getNum());
           pc++;
           break;
@@ -51,6 +52,7 @@ public class VirtualMachine
           }
           x = env.get(com.getVar());
           stk.push(x);
+          debug("Loaded (com.getVar(), x):" + com.getVar() + "," + x);
           pc++;
           break;
         case STORE:
@@ -60,6 +62,7 @@ public class VirtualMachine
           }
           x = stk.pop();
           env.put(com.getVar(), x);
+          debug("Stored: (com.getVar(), x)" + com.getVar() + "," + x);
           pc++;
           break;
         case ADD:
@@ -73,6 +76,7 @@ public class VirtualMachine
           stk.pop();
           x = x1 + x2;
           stk.push(x);
+          debug("Added: (x = x1 + x2)" + x + "," + x1 + "," + x2);
           pc++;
           break;
         case SUB:
@@ -86,6 +90,7 @@ public class VirtualMachine
           stk.pop();
           x = x1 - x2;
           stk.push(x);
+          debug("SUB: (x = x1 - x2)" + x + "," + x1 + "," + x2);
           pc++;
           break;
         case MUL:
@@ -99,6 +104,7 @@ public class VirtualMachine
           stk.pop();
           x = x1 * x2;
           stk.push(x);
+          debug("MUL: (x = x1 * x2)" + x + "," + x1 + "," + x2);
           pc++;
           break;
         case MONE:
@@ -111,6 +117,7 @@ public class VirtualMachine
           x = -x1;
           stk.push(x);
           pc++;
+          debug("MONE: (x = - x1)" + x + "," + x1);
           break;
         case REM:
           debug("====REM===");
@@ -123,6 +130,7 @@ public class VirtualMachine
           stk.pop();
           x = x1 % x2;
           stk.push(x);
+          debug("REM: (x = x1 % x2)" + x + "," + x1 + "," + x2);
           pc++;
           break;
         case QUO:
@@ -140,6 +148,7 @@ public class VirtualMachine
           x = x1 / x2;
           stk.push(x);
           pc++;
+          debug("QUO: (x = x1 / x2)" + x + "," + x1 + "," + x2);
           break;
         case EQ:
           debug("====EQ===");
@@ -151,6 +160,7 @@ public class VirtualMachine
           x = x1 == x2 ? 1 : 0;
           stk.push(x);
           pc++;
+          debug("EQ: (x = x1 == x2)" + x + "," + x1 + "," + x2);
           break;
         case NEQ:
           debug("====NEQ===");
@@ -162,6 +172,7 @@ public class VirtualMachine
           x = x1 != x2 ? 1 : 0;
           stk.push(x);
           pc++;
+          debug("NEQ: (x = x1 !== x2)" + x + "," + x1 + "," + x2);
           break;
         case LT:
           debug("====LT===");
@@ -173,6 +184,7 @@ public class VirtualMachine
           x = x1 < x2 ? 1 : 0;
           stk.push(x);
           pc++;
+          debug("LT: (x = x1 < x2)" + x + "," + x1 + "," + x2);
           break;
         case GT:
           debug("====GT===");
@@ -184,6 +196,7 @@ public class VirtualMachine
           x = x1 > x2 ? 1 : 0;
           stk.push(x);
           pc++;
+          debug("GT: (x = x1 > x2)" + x + "," + x1 + "," + x2);
           break;
         case AND:
           debug("====AND===");
@@ -195,6 +208,7 @@ public class VirtualMachine
           x = x1 == 0 ? 0 : (x2 == 0 ? 0 : 1);
           stk.push(x);
           pc++;
+          debug("AND: (x = x1 && x2)" + x + "," + x1 + "," + x2);
           break;
         case OR:
           debug("====OR===");
@@ -206,16 +220,15 @@ public class VirtualMachine
           x = x1 == 0 ? (x2 == 0 ? 0 : 1) : 1;
           stk.push(x);
           pc++;
+          debug("OR: (x = x1 || x2)" + x + "," + x1 + "," + x2);
           break;
         case JMP:
           debug("====JMP===");
           pc = pc + com.getNum();
+          debug("JMP: (pc, com.getNum())" + pc + "," + com.getNum());
           break;
         case CJMP:
           debug("====CJMP===");
-          debug("stk.size():" + stk.size());
-          debug("stk.top():" + stk.top());
-          debug("com.getVar():" + com.getVar() + ", com.getNum():" + com.getNum());
           if (stk.size() < 1) {
             throw new VMException(stk);
           }
@@ -225,6 +238,7 @@ public class VirtualMachine
           } else {
             pc++;
           }
+          debug("CJPM: (x1, pc, com.getNum())" + x1 + "," + pc + "," + com.getNum());
           break;
         case QUIT:
           debug("====QUIT===");
@@ -239,8 +253,8 @@ public class VirtualMachine
   }
 
   public void debug(String msg) {
-    return;
 //    System.out.println(msg);
+    return;
   }
 
   public String toString() {
